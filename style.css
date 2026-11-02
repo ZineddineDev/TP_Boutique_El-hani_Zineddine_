@@ -178,3 +178,115 @@ body {
 .contact-form button:hover {
     background-color: #7d0055;
 }
+
+
+.btn-blue {
+    background-color: #1e6fe0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-blue:hover {
+    background-color: #1558b8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(30, 111, 224, 0.5);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+article table {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+article table:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(247, 133, 252, 0.8),
+                0 0 20px rgba(247, 133, 252, 0.6);
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+article a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+article a:hover {
+    color: #c2188f;
+}
+
+button {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(247, 133, 252, 0.8);
+}
+
+article table {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 20px 0;
+}
+
+.main-nav a {
+    position: relative;
+    text-decoration: none;
+    color: #222;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 6px 2px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+.main-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #9b006c;
+    transition: width 0.3s ease;
+}
+
+
+.main-nav a:hover {
+    color: #9b006c;
+    transform: translateY(-2px);
+}
+
+.main-nav a:hover::after {
+    width: 100%;
+}
+
+
+.main-nav a.active {
+    color: #9b006c;
+}
+
+.main-nav a.active::after {
+    width: 100%;
+}
